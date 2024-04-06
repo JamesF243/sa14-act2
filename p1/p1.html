@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="p1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="p1.js"></script>
+</head>
+<body>
+    <h1>Weather Dashboard</h1>
+    <form id="weather-form">
+        <label for="city-input">Enter City Name:</label>
+        <input type="text" id="city-input" name="city" required>
+        <button type="submit">Get Weather</button>
+    </form>
+    <div id="weather-info">
+        <p>City: <span id="city-name"></span></p>
+        <p>Region: <span id="city-region"></span></p>
+        <p>Country: <span id="city-country"></span></p>
+        <p>Time: <span id="time"></span></p>
+        <p>Temperature: <span id="temperature"></span></p>
+        <p>Weather Description: <img id="weather-description" alt="Weather Icon"></p>
+        <p>Humidity: <span id="humidity"></span></p>
+        <div id="forecast">
+            <!-- Forecast for the next 5 days -->
+            <div id="forecast-0" class="forecast-item"></div>
+            <div id="forecast-1" class="forecast-item"></div>
+            <div id="forecast-2" class="forecast-item"></div>
+            <div id="forecast-3" class="forecast-item"></div>
+            <div id="forecast-4" class="forecast-item"></div>
+        </div>
+    </div>
+    <div id="error-message"></div>
+</body>
+</html>
