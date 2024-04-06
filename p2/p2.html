@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter Tool</title>
+    <script src="p2.js" defer></script>
+</head>
+<body>
+    <h1>Currency Converter Tool</h1>
+    <form id="converter-form">
+        <label for="source-currency">Source Currency:</label>
+        <select id="source-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <br>
+        <label for="target-currency">Target Currency:</label>
+        <select id="target-currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+        </select>
+        <br>
+        <label for="amount">Amount:</label>
+        <input type="number" id="amount" min="0" step="0.01" required>
+        <br>
+        <button type="submit">Convert</button>
+    </form>
+    <div id="result"></div>
+</body>
+</html>
